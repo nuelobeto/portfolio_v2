@@ -44,7 +44,7 @@ export const Header = () => {
             </p>
             <div className="flex items-center gap-2 mt-6">
               <a
-                href="https://docs.google.com/document/d/1cKj7X9SvuF-XNlT2kTZh7HgyxgWQYoSf1ufzZKuoAPg/edit?usp=sharing"
+                href="/docs/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
