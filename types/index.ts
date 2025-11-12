@@ -1,4 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import {LucideProps} from 'lucide-react';
+import {ForwardRefExoticComponent, RefAttributes} from 'react';
+import {IconType} from 'react-icons/lib';
+
 export type Theme = 'light' | 'dark';
 
 export interface ILink {
@@ -7,7 +10,11 @@ export interface ILink {
 }
 
 export interface ISocial {
-  icon: any;
+  icon:
+    | ForwardRefExoticComponent<
+        Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>
+      >
+    | IconType;
   href: string;
 }
 
