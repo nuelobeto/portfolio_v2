@@ -1,4 +1,4 @@
-import {IExperience, ILink, IProject, ISocial} from '@/types';
+import {IEducation, IExperience, ILink, IProject, ISocial} from '@/types';
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 
 export const LINKS: ILink[] = [
@@ -13,6 +13,10 @@ export const LINKS: ILink[] = [
   {
     name: 'Projects',
     href: '#projects',
+  },
+  {
+    name: 'Education',
+    href: '#education',
   },
 ];
 
@@ -143,5 +147,22 @@ export const PROJECTS: IProject[] = [
       'TodoPal is a simple and intuitive task management app that helps users organize, track, and complete their daily tasks efficiently. Built with React, TypeScript, and Redux Toolkit for a smooth and responsive experience.',
     website: 'https://todopal.vercel.app/',
     github: 'https://github.com/nuelobeto/redux-toolkit-react-ts',
+  },
+];
+
+export const EDUCATION: IEducation[] = [
+  {
+    logo: '/images/uniglos.jpg',
+    course: 'Msc Cybersecurity',
+    school: 'University of Gloucetershire',
+    start_date: '2025',
+    end_date: '2026',
+  },
+  {
+    logo: '/images/uniben.png',
+    course: 'BEng Electrical/Electronic Engineering',
+    school: 'University of Benin',
+    start_date: '2013',
+    end_date: '2019',
   },
 ];

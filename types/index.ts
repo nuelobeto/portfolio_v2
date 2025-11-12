@@ -30,6 +30,14 @@ export interface IProject {
   made_at?: string;
 }
 
+export interface IEducation {
+  logo: string;
+  course: string;
+  school: string;
+  start_date: string;
+  end_date?: string;
+}
+
 export interface IContactForm {
   full_name: string;
   email: string;
